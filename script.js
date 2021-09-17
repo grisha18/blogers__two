@@ -3,10 +3,12 @@ const right = document.querySelector(".arrow-right");
 
 const anotherBlogerImages = document.querySelector(".another-blogers__images");
 
+const delta = 321;
+
 
 const handleClickLeft = (e)=>{
 
-    anotherBlogerImages.scrollLeft = anotherBlogerImages.scrollLeft - 200;
+    anotherBlogerImages.scrollLeft = anotherBlogerImages.scrollLeft - delta;
 
 
 }
@@ -14,7 +16,7 @@ const handleClickLeft = (e)=>{
 const handleClickRight = (e)=>{
 
 
-    anotherBlogerImages.scrollLeft = anotherBlogerImages.scrollLeft + 200;
+    anotherBlogerImages.scrollLeft = anotherBlogerImages.scrollLeft + delta1;
     
 }
 

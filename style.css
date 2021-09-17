@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     --content-width: 1298px;
+    scroll-behavior: smooth;
 }
 body{
     background: #6E105E;
@@ -292,6 +293,14 @@ body{
     height: 311px;
     flex-shrink: 0;
     background: url("images/girl1.png");
+    position: relative;
+}
+.another-blogers__images__image:nth-child(1){
+    filter: opacity(50%);
+}
+.another-blogers__images__image:nth-child(2){
+    background: url("images/man2.png");
+    filter: opacity(50%);
 }
 .arrow-left,
 .arrow-right{
@@ -333,3 +342,48 @@ body{
     line-height: 24px;
     color: #EFF3F5;
 }
+.another-blogers__images__image .info{
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 1em;
+}
+.another-blogers__images__image .info .info-social{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    color: white;
+    gap: 0.53em;
+
+}
+
+.another-blogers__images__image .info .info-name{
+    color: #EFF3F5;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 37px;
+    display: flex;
+    align-self: flex-start;
+}
+.another-blogers__images__image .info .info-social img{
+    width: 20px;
+    height: 20px;
+
+}
+.another-blogers__images__image .info .info-social span{
+    color: #EFF3F5;
+}
+
+
+.another-blogers__images__image .info .info-social > div{
+    flex-shrink: 0;
+    width: 40%;
+    color: #EFF3F5;
+}
+
