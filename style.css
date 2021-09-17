@@ -193,24 +193,33 @@ body{
 }
 .main-block-about{
     overflow-y: scroll;
-    scrollbar-color: rgb(210,210,210) rgb(46,54,69) !important;
+    scrollbar-color: #969696;
     scrollbar-width: thin !important; 
 }
-::-webkit-scrollbar{
+.main-block-about::-webkit-scrollbar{
+    width: 3px;
+    height: 173px;
+}
+.main-block-about::-webkit-scrollbar-thumb{
+    background: #EFF3F5;
+    border-radius: 10px;
+}
+.main-block-about::-webkit-scrollbar-track{
+    margin-left: 100px;
+}
+.another-blogers__images::-webkit-scrollbar{
     width: 20px;
+    height: 5px;
 }
-
-::-webkit-scrollbar-track{
-    box-shadow: inset 0 0 5px grey;
+.another-blogers__images::-webkit-scrollbar-track,
+.main-block-about::-webkit-scrollbar-track{
+    background:  #969696;
     border-radius: 10px;
 }
-
-::-webkit-scrollbar-thumb{
-    background-color: red;
+.another-blogers__images::-webkit-scrollbar-thumb{
+    background: #EFF3F5;
     border-radius: 10px;
 }
-
-
 .main-block__text{
     font-weight: 500;
     font-size: 16px;
@@ -263,11 +272,9 @@ body{
     color: #EFF3F5;
     margin: 80px auto;
 }
-
 .another-blogers{
     position: relative;
 }
-
 .another-blogers__images{
     display: flex;
     flex-direction: row;
@@ -277,41 +284,34 @@ body{
     overflow-y: visible;
     gap: 1em;
     flex-shrink: 0;
-    scrollbar-color: rgb(210,210,210) rgb(46,54,69) !important;
     scrollbar-width: thin !important;
     scroll-margin-left: 300px;
-   
 }
 .another-blogers__images__image{
     width: 311px;
-
     height: 311px;
-
     flex-shrink: 0;
     background: url("images/girl1.png");
 }
 .arrow-left,
 .arrow-right{
     position: absolute;
-
+    cursor: pointer;
 }
 .arrow-left{
-    cursor: pointer;
-    bottom: 0;
-    left: 10%;
+    bottom: -4px;
+    left: 18%;
     background: url("images/arrow-left.png");
     width: 7px;
     height: 14px;
 }
 .arrow-right{
-    cursor: pointer;
-    bottom: 0;
-    right: 10%;
+    bottom: -4px;
+    right: 18%;
     background: url("images/arrow-right.png");
     width: 7px;
     height: 14px;
 }
-
 .another-blogers__images::-webkit-scrollbar-track{
     margin-top: 10px;
     margin-bottom: 10px;
@@ -323,9 +323,9 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
     width: var(--content-width);
     justify-content: space-between;
+    margin-top: 65px;
 }
 .phone{
     font-weight: 600;
