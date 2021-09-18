@@ -1,14 +1,14 @@
 const left = document.querySelector(".arrow-left");
 const right = document.querySelector(".arrow-right");
 
-const anotherBlogerImages = document.querySelector(".another-blogers__images");
+const anotherBlogersImages = document.querySelector(".another-blogers__images");
 
-const delta = 321;
+const delta = 327;
 
 
 const handleClickLeft = (e)=>{
 
-    anotherBlogerImages.scrollLeft = anotherBlogerImages.scrollLeft - delta;
+    anotherBlogersImages.scrollLeft = anotherBlogersImages.scrollLeft - delta;
 
 
 }
@@ -16,7 +16,7 @@ const handleClickLeft = (e)=>{
 const handleClickRight = (e)=>{
 
 
-    anotherBlogerImages.scrollLeft = anotherBlogerImages.scrollLeft + delta1;
+    anotherBlogersImages.scrollLeft = anotherBlogersImages.scrollLeft + delta;
     
 }
 

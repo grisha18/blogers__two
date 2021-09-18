@@ -195,7 +195,9 @@ body{
 .main-block-about{
     overflow-y: scroll;
     scrollbar-color: #969696;
-    scrollbar-width: thin !important; 
+    scrollbar-width: thin !important;
+    width: 850px;
+    margin: 30px 0 30px 0; 
 }
 .main-block-about::-webkit-scrollbar{
     width: 3px;
@@ -292,14 +294,38 @@ body{
     width: 311px;
     height: 311px;
     flex-shrink: 0;
-    background: url("images/girl1.png");
     position: relative;
 }
-.another-blogers__images__image:nth-child(1){
+.another-blogers__images__image{
+    background: url("images/girl1.png");
     filter: opacity(50%);
 }
 .another-blogers__images__image:nth-child(2){
     background: url("images/man2.png");
+    filter: opacity(50%);
+}
+.another-blogers__images__image:nth-child(3){
+    background: url("images/man3.png");
+    filter: opacity(50%);
+}
+.another-blogers__images__image:nth-child(4){
+    background: url("images/man4.png");
+    filter: opacity(50%);
+}
+.another-blogers__images__image:nth-child(5){
+    background: url("images/girl1.png");
+    filter: opacity(50%);
+}
+.another-blogers__images__image:nth-child(6){
+    background: url("images/man2.png");
+    filter: opacity(50%);
+}
+.another-blogers__images__image:nth-child(7){
+    background: url("images/man3.png");
+    filter: opacity(50%);
+}
+.another-blogers__images__image:nth-child(8){
+    background: url("images/man4.png");
     filter: opacity(50%);
 }
 .arrow-left,
@@ -327,21 +353,6 @@ body{
     margin-left: 300px;
     margin-right: 300px;
 }
-.footer{
-    height: 225px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: var(--content-width);
-    justify-content: space-between;
-    margin-top: 65px;
-}
-.phone{
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 24px;
-    color: #EFF3F5;
-}
 .another-blogers__images__image .info{
     width: 100%;
     height: 50%;
@@ -360,9 +371,17 @@ body{
     flex-wrap: wrap;
     color: white;
     gap: 0.53em;
-
 }
-
+.info-social span{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #EFF3F5;
+}
+.info-social__youtube,
+.info-social__vk{
+    margin-top: 14px;
+}
 .another-blogers__images__image .info .info-name{
     color: #EFF3F5;
     font-weight: bold;
@@ -374,16 +393,39 @@ body{
 .another-blogers__images__image .info .info-social img{
     width: 20px;
     height: 20px;
-
 }
 .another-blogers__images__image .info .info-social span{
     color: #EFF3F5;
 }
-
-
 .another-blogers__images__image .info .info-social > div{
     flex-shrink: 0;
     width: 40%;
     color: #EFF3F5;
 }
-
+.footer{
+    height: 225px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--content-width);
+    justify-content: space-between;
+    margin-top: 65px;
+}
+.phone{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #EFF3F5;
+}
+.footer-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+}
+.footer-social__icon{
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
